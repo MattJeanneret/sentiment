@@ -31,7 +31,7 @@ steps:
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
     azureContainerRegistry: $(azureContainerRegistry)
     dockerFile: Dockerfile
-    imageName: mattjeanneret
+    imageName: mattjeanneret:latest
 
 - task: Docker@1
   displayName: Tag image

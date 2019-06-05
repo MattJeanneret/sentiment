@@ -39,7 +39,7 @@ steps:
     command: Tag image
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
     azureContainerRegistry: $(azureContainerRegistry)
-    imageName: $(azureContainerRegistry)/$(Build.Repository.Name):latest
+    imageName: mattjeanneret:latest
     arguments: $(azureContainerRegistry)/$(Build.Repository.Name):$(Build.BuildId)
 
 - task: Docker@1
